@@ -1,0 +1,25 @@
+{
+  "name": "bakeoff/dkfds",
+  "description": "Det Fælles Designsystem for CakePHP",
+  "type": "cakephp-plugin",
+  "keywords": ["cakephp", "design-system", "front-end"],
+  "authors": [
+    {
+      "name": "Erhvervsstyrelsen og Digitaliseringsstyrelsen",
+      "homepage": "https://designsystem.dk/",
+      "role": "Author"
+    },
+    {
+      "name": "@mehov",
+      "homepage": "http://github.com/mehov",
+      "role": "Author"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Bakeoff\\DKFDS\\": "src"
+    }
+  }
+}
