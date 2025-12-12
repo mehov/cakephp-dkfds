@@ -16,6 +16,7 @@
     }
   ],
   "require": {
+    "dkfds/dkfds": "*"
   },
   "autoload": {
     "psr-4": {
