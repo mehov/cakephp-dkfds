@@ -6,10 +6,7 @@ class View extends \Cake\View\View {
 
     public function initialize(array $options = []): void
     {
-        $helpers = [
-        ];
-        $this->helpers = array_merge($helpers, $this->helpers);
-
+        $this->addHelper('Icon', ['className' => 'Bakeoff/DKFDS.Icon']);
         parent::initialize();
     }
 
