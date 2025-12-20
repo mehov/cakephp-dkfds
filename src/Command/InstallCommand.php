@@ -48,7 +48,8 @@ class InstallCommand extends \Cake\Command\Command
     public function linkWebroot(ConsoleIo $io): void
     {
         // Actual path to dkfds/dkfds dist folder
-        $target = \realpath(\CORE_PATH . '../../dkfds/dkfds/dist');
+        $vendor = \dirname(\CORE_PATH, 2);
+        $target = $vendor . '/dkfds/dkfds/dist';
         $io->info(sprintf('Pointing %s webroot to dkfds/dkfds dist ...', $this->pluginClass));
         $io->info(sprintf('  %s -> %s', $target, $this->pluginWebroot));
         $result = @symlink($target, $this->pluginWebroot);
